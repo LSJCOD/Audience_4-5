@@ -1,6 +1,6 @@
 function traerInformacionAuditorios() {
     $.ajax({
-        url: "http://localhost:8080/api/Audience/all",
+        url: "http://132.145.221.82:8080/api/Audience/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
@@ -47,7 +47,7 @@ function guardarInformacionAuditorios() {
         dataType: 'JSON',
         data: JSON.stringify(var2),
 
-        url: "http://localhost:8080/api/Audience/save",
+        url: "http://132.145.221.82:8080/api/Audience/save",
 
 
         success: function (response) {
@@ -80,7 +80,7 @@ function actualizarInformacionAuditorios(idElemento) {
     console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Audience/update",
+        url: "http://132.145.221.82:8080/api/Audience/update",
         type: "PUT",
         data: dataToSend,
         contentType: "application/JSON",
@@ -105,7 +105,7 @@ function borrarAuditorio(idElemento) {
     };
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Audience/" + idElemento,
+        url: "http://132.145.221.82:8080/api/Audience/" + idElemento,
         type: "DELETE",
         data: dataToSend,
         contentType: "application/JSON",
@@ -123,7 +123,7 @@ function borrarAuditorio(idElemento) {
 
 function modificarTablaAuditorios() {
     $.ajax({
-        url: "http://localhost:8080/api/Audience/all",
+        url: "http://132.145.221.82:8080/api/Audience/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta1) {
@@ -168,7 +168,7 @@ function actualizarInformacionAuditorios(idElemento) {
     console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Audience/update",
+        url: "http://132.145.221.82:8080/api/Audience/update",
         type: "PUT",
         data: dataToSend,
         contentType: "application/JSON",

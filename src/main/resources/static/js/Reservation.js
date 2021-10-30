@@ -1,6 +1,6 @@
 function traerInformacionReservacion() {
     $.ajax({
-        url: "http://localhost:8080/api/Reservation/all",
+        url: "http://132.145.221.82:8080/api/Reservation/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
@@ -44,7 +44,7 @@ function guardarInformacionReservacion() {
         dataType: 'JSON',
         data: JSON.stringify(var2),
 
-        url: "http://localhost:8080/api/Reservation/save",
+        url: "http://132.145.221.82:8080/api/Reservation/save",
 
 
         success: function (response) {
@@ -76,7 +76,7 @@ function actualizarInformacionReservacion(idElemento) {
     console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Reservation/update",
+        url: "http://132.145.221.82:8080/api/Reservation/update",
         type: "PUT",
         data: dataToSend,
         contentType: "application/JSON",
@@ -100,7 +100,7 @@ function borrarReservacion(idElemento) {
     };
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Reservation/" + idElemento,
+        url: "http://132.145.221.82:8080/api/Reservation/" + idElemento,
         type: "DELETE",
         data: dataToSend,
         contentType: "application/JSON",
@@ -118,7 +118,7 @@ function borrarReservacion(idElemento) {
 
 function modificarTablaReservacion() {
     $.ajax({
-        url: "http://localhost:8080/api/Reservation/all",
+        url: "http://132.145.221.82:8080/api/Reservation/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta1) {
@@ -160,7 +160,7 @@ function actualizarInformacionReservacion(idElemento) {
     console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Reservation/update",
+        url: "http://132.145.221.82:8080/api/Reservation/update",
         type: "PUT",
         data: dataToSend,
         contentType: "application/JSON",

@@ -1,6 +1,6 @@
 function traerInformacionClientes() {
     $.ajax({
-        url: "http://localhost:8080/api/Client/all",
+        url: "http://132.145.221.82:8080/api/Client/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
@@ -47,7 +47,7 @@ function guardarInformacionClientes() {
         dataType: 'JSON',
         data: JSON.stringify(var2),
 
-        url: "http://localhost:8080/api/Client/save",
+        url: "http://132.145.221.82:8080/api/Client/save",
 
 
         success: function (response) {
@@ -80,7 +80,7 @@ function actualizarInformacionCliente(idElemento) {
     console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Client/update",
+        url: "http://132.145.221.82:8080/api/Client/update",
         type: "PUT",
         data: dataToSend,
         contentType: "application/JSON",
@@ -105,7 +105,7 @@ function borrarCliente(idElemento) {
     };
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Client/" + idElemento,
+        url: "http://132.145.221.82:8080/api/Client/" + idElemento,
         type: "DELETE",
         data: dataToSend,
         contentType: "application/JSON",
@@ -123,7 +123,7 @@ function borrarCliente(idElemento) {
 
 function modificarTablaClientes() {
     $.ajax({
-        url: "http://localhost:8080/api/Client/all",
+        url: "http://132.145.221.82:8080/api/Client/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta1) {
@@ -168,7 +168,7 @@ function actualizarInformacionCliente(idElemento) {
     console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Client/update",
+        url: "http://132.145.221.82:8080/api/Client/update",
         type: "PUT",
         data: dataToSend,
         contentType: "application/JSON",

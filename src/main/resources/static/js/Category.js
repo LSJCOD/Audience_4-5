@@ -1,6 +1,6 @@
 function traerInformacionCategorias() {
     $.ajax({
-        url: "http://localhost:8080/api/Category/all",
+        url: "http://132.145.221.82:8080/api/Category/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
@@ -41,7 +41,7 @@ function guardarInformacionCategorias() {
         dataType: 'JSON',
         data: JSON.stringify(var2),
 
-        url: "http://localhost:8080/api/Category/save",
+        url: "http://132.145.221.82:8080/api/Category/save",
 
 
         success: function (response) {
@@ -72,7 +72,7 @@ function actualizarInformacionCategorias(idElemento) {
     console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Category/update",
+        url: "http://132.145.221.82:8080/api/Category/update",
         type: "PUT",
         data: dataToSend,
         contentType: "application/JSON",
@@ -95,7 +95,7 @@ function borrarCategoria(idElemento) {
     };
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Category/" + idElemento,
+        url: "http://132.145.221.82:8080/api/Category/" + idElemento,
         type: "DELETE",
         data: dataToSend,
         contentType: "application/JSON",
@@ -113,7 +113,7 @@ function borrarCategoria(idElemento) {
 
 function modificarTablaCategorias() {
     $.ajax({
-        url: "http://localhost:8080/api/Category/all",
+        url: "http://132.145.221.82:8080/api/Category/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta1) {
@@ -152,7 +152,7 @@ function actualizarInformacionCategorias(idElemento) {
     console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "http://localhost:8080/api/Category/update",
+        url: "http://132.145.221.82:8080/api/Category/update",
         type: "PUT",
         data: dataToSend,
         contentType: "application/JSON",
