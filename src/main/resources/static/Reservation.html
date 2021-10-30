@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link type="text/css" href="css/Style.css" rel="stylesheet">
+    <!-- HTML -->
+    <LINK TYPE="text/html" HREF="Reports.html">
+    <LINK TYPE="text/html" HREF="Category.html">
+    <LINK TYPE="text/html" HREF="Message.html">
+    <LINK TYPE="text/html" HREF="Reservation.html">
+    <LINK TYPE="text/html" HREF="Client.html">
+    <LINK TYPE="text/html" HREF="Audience.html">
+    <LINK TYPE="text/html" HREF="index.html">
+    <!--JavaScrip-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/Reservation.js"></script>
+    <!--     Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Category</title>
+
+</head>
+<!--Cabezote de Navegacion-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://misiontic2022.usergioarboleda.edu.co/">Mastertech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Reports.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Audience.html">Audience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Category.html">Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Client.html">Client</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Reservation.html">Reservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Message.html">Message</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Modal Consultas-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tabla Resultados</h5>
+            </div>
+            <div class="modal-body">
+                <div CLASS="Tabla">
+                    <br>
+                    <div class="Tables">
+                        <table class="table table-striped table-hover">
+                            <tbody style="border: white solid 1px" id="resultado"/>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body class="Reservacion">
+<h1>Reservacion</h1>
+
+
+
+<!--Formularios-->
+<form id="Reservacion">
+    <div class="mb-3">
+        <label for="RStardate" class="form-label">StarDate</label>
+        <input type="datetime-local" id="RStardate" placeholder="RStardate" class="form-control" required="required">
+    </div>
+    <div class="mb-3">
+        <label for="RDevolutiondate" class="form-label">DevolutionDate</label>
+        <input type="datetime-local" id="RDevolutiondate" placeholder="RDevolutiondate" class="form-control"
+               required="required">
+    </div>
+    <div class="mb-3">
+        <label for="RStatus" class="form-label">Status</label>
+        <input type="text" id="RStatus" placeholder="RStatus" class="form-control"
+               required="required">
+    </div>
+    <button onclick="traerInformacionReservacion()" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Consultar Reservacion
+    </button>
+    <button onclick="guardarInformacionReservacion()" class="btn btn-primary" id="Reservacion">Agregar Reservacion
+    </button>
+    <button onclick="modificarTablaReservacion()" class="btn btn-primary" id="Reservacion">Modificar Reservacion
+    </button>
+</form>
+
+
+
+</body>
+
+<!--Tablas de Actualizacion-->
+
+<div class="Reservacion">
+    <table class="table table-striped" id="Modificacion">
+        <tbody id="resultado1"></tbody>
+    </table>
+</div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+-->
+
+</html>

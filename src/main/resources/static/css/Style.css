@@ -1,0 +1,197 @@
+h1{
+    margin: auto;
+    text-align: center;
+    background: antiquewhite;
+}
+
+h5#Carrusel{
+    color: white;
+}
+
+p#Carrusel{
+    color: white;
+}
+
+/*Auditorio*/
+
+body.Auditorio{
+    background-image: url("https://th.bing.com/th/id/R.7a8b1114ceb40078fd4263d245da10c8?rik=JC9S8%2bPxiG2ZfA&pid=ImgRaw&r=0")
+}
+form#Auditorio {
+    border: white 3px solid;
+    border-radius: 10px;
+    background: lightgray;
+    margin: auto;
+    width: 30%;
+}
+
+
+div.mb-3{
+    width: 90%;
+    margin: auto;
+}
+
+button.btn{
+    margin-left: 8% ;
+    margin-bottom: 1%;
+}
+
+
+
+footer{
+
+    position: fixed;
+    margin-bottom: 0;
+    text-align: center;
+    background: lightgray;
+}
+
+/*Categoria*/
+
+body.Categoria{
+    background-image: url("https://cccartagena.com/wp-content/uploads/2019/01/auditorio4.jpg")
+}
+form#Categoria {
+    border: white 3px solid;
+    border-radius: 10px;
+    background: lightgray;
+    margin: auto;
+    width: 30%;
+}
+
+table#Modificacion {
+
+    text-align: center;
+    color: white;
+    border-collapse: collapse;
+    border: white 1px solid;
+    margin: 30px auto;
+    width: 80%;
+
+}
+
+th{
+    background: cornflowerblue;
+}
+
+div.mb-3{
+    width: 90%;
+    margin: auto;
+}
+
+button.btn{
+    margin-left: 8% ;
+    margin-bottom: 1%;
+}
+
+
+
+footer{
+
+    position: fixed;
+    margin-bottom: 0;
+    text-align: center;
+    background: lightgray;
+}
+
+/*Cliente*/
+
+body.Cliente{
+    background-image: url("https://th.bing.com/th/id/R.88c71cddacf15ad8f062d2ffe09cc485?rik=bKEvEC6m0Kjr6w&riu=http%3a%2f%2farchitizer-prod.imgix.net%2fmediadata%2fprojects%2f432011%2f781fc32b.jpg%3fq%3d60%26auto%3dformat%2ccompress%26cs%3dstrip%26w%3d1680&ehk=ADLwQprOP9rBHE00k5Fbq%2bMgWE8iQXLRLVgAnx%2fRY9M%3d&risl=&pid=ImgRaw&r=0")
+}
+form#Cliente {
+    border: white 3px solid;
+    border-radius: 10px;
+    background: lightgray;
+    margin: auto;
+    width: 30%;
+}
+
+
+div.mb-3{
+    width: 90%;
+    margin: auto;
+}
+
+button.btn{
+    margin-left: 8% ;
+    margin-bottom: 1%;
+}
+
+
+
+footer{
+
+    position: fixed;
+    margin-bottom: 0;
+    text-align: center;
+    background: lightgray;
+}
+
+/*Reservacion*/
+
+body.Reservacion{
+    background-image: url("https://divisare-res.cloudinary.com/images/f_auto,q_auto,w_auto/v1/project_images/5082139/LR_TONX1612-2/annabel-karim-kassar-al-zorah-pavilion.jpg")
+}
+form#Reservacion {
+    border: white 3px solid;
+    border-radius: 10px;
+    background: lightgray;
+    margin: auto;
+    width: 30%;
+}
+
+
+div.mb-3{
+    width: 90%;
+    margin: auto;
+}
+
+button.btn{
+    margin-left: 8% ;
+    margin-bottom: 1%;
+}
+
+
+
+footer{
+
+    position: fixed;
+    margin-bottom: 0;
+    text-align: center;
+    background: lightgray;
+}
+
+/*Mensaje*/
+
+body.Mensaje{
+    background-image: url("https://th.bing.com/th/id/R.05933ce2671a621994e70d033bc3a4a6?rik=CynfuQRI%2fnJAxw&riu=http%3a%2f%2fwww.gordon-inc.com%2fwp-content%2fuploads%2f2020%2f10%2f715.jpg&ehk=9gPuISQ%2bI9o7XjDskJ1e4VKm6EfxOKnmJcymtPcj6Zs%3d&risl=&pid=ImgRaw&r=0")
+}
+form#Mensaje {
+    border: white 3px solid;
+    border-radius: 10px;
+    background: lightgray;
+    margin: auto;
+    width: 30%;
+}
+
+
+div.mb-3{
+    width: 90%;
+    margin: auto;
+}
+
+button.btn{
+    margin-left: 8% ;
+    margin-bottom: 1%;
+}
+
+
+
+footer{
+
+    position: fixed;
+    margin-bottom: 0;
+    text-align: center;
+    background: lightgray;
+}
